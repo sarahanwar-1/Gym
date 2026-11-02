@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GyGym: strength training, yoga, HIIT and martial arts. Transform your body, transform your life.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>GyGym | Transform Your Body, Transform Your Life</title>
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <nav class="nav">
+      <a class="brand" href="#top">Gy<span>Gym</span></a>
+      <div class="nav-links">
+        <a href="#programs">Programs</a>
+        <a href="#pricing">Membership</a>
+      </div>
+      <a href="#pricing" class="btn btn-small">Join now</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-inner">
+        <span class="eyebrow">Train harder. Live better.</span>
+        <h1>Transform Your Body,<br><em>Transform Your Life</em></h1>
+        <p>Expert coaches, great equipment and a community that pushes you further. Pick a program, choose a plan and start today.</p>
+        <div class="hero-actions">
+          <a href="#pricing" class="btn btn-large">View plans</a>
+          <a href="#programs" class="btn btn-large btn-outline">Explore programs</a>
+        </div>
+        <ul class="stats">
+          <li><strong>5</strong><span>Programs</span></li>
+          <li><strong>3</strong><span>Flexible plans</span></li>
+          <li><strong>7 days</strong><span>Open weekly</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Programs -->
+    <section class="programs" id="programs">
+      <div class="container">
+        <span class="eyebrow eyebrow-dark">What we offer</span>
+        <h2 class="section-title">Our Programs</h2>
+        <p class="lead">Whatever your goal, there's a program built for you.</p>
+
+        <div class="program-list">
+          <article class="program">
+            <div class="icon" aria-hidden="true">💪</div>
+            <h3>Strength Training</h3>
+            <p>Build real, lasting strength with guided progressive training.</p>
+          </article>
+          <article class="program">
+            <div class="icon" aria-hidden="true">🏋️‍♂️</div>
+            <h3>Weight Lifting</h3>
+            <p>Master your lifts with proper form and a full free-weight area.</p>
+          </article>
+          <article class="program">
+            <div class="icon" aria-hidden="true">🧘</div>
+            <h3>Yoga &amp; Flexibility</h3>
+            <p>Improve mobility, balance and recovery in calm, focused classes.</p>
+          </article>
+          <article class="program">
+            <div class="icon" aria-hidden="true">🔥</div>
+            <h3>HIIT Workouts</h3>
+            <p>Short, intense sessions that burn fat and boost your endurance.</p>
+          </article>
+          <article class="program">
+            <div class="icon" aria-hidden="true">🥋</div>
+            <h3>Martial Arts</h3>
+            <p>Build discipline, fitness and confidence with technique-based training.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <span class="eyebrow">Membership</span>
+        <h2 class="section-title light">Membership Plans</h2>
+        <p class="lead light">Simple monthly pricing. Change or cancel any time.</p>
+
+        <div class="plans">
+          <article class="plan" data-plan="Basic">
+            <h3>Basic</h3>
+            <p class="price"><span>$20</span>/month</p>
+            <ul>
+              <li>Gym floor access</li>
+              <li>Locker rooms</li>
+              <li>Free orientation</li>
+            </ul>
+            <button class="btn btn-block" onclick="selectPlan('Basic')">Select</button>
+          </article>
+
+          <article class="plan featured" data-plan="Standard">
+            <span class="badge">Most popular</span>
+            <h3>Standard</h3>
+            <p class="price"><span>$35</span>/month</p>
+            <ul>
+              <li>Everything in Basic</li>
+              <li>Group classes</li>
+              <li>Yoga &amp; HIIT sessions</li>
+            </ul>
+            <button class="btn btn-block" onclick="selectPlan('Standard')">Select</button>
+          </article>
+
+          <article class="plan" data-plan="Premium">
+            <h3>Premium</h3>
+            <p class="price"><span>$50</span>/month</p>
+            <ul>
+              <li>Everything in Standard</li>
+              <li>Martial arts classes</li>
+              <li>Personal coaching</li>
+            </ul>
+            <button class="btn btn-block" onclick="selectPlan('Premium')">Select</button>
+          </article>
+        </div>
+
+        <p class="selection" id="selection" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year">2025</span> GyGym. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
